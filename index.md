@@ -6,6 +6,7 @@ I am a graduate student in Computer Science and Cognitive Science at Tufts Unive
 (no posts yet)
 {% else %}
 {% for post in site.posts %}
-- [{{post.title}}]({{post.url}}
+- [{{ post.title }}]({{ post.url }}
+  {{ post.excerpt }}
 {% endfor %}
 {% endif %}
