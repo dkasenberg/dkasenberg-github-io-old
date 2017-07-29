@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "AI Ethics: Are Asimov's Laws Enough?"
+comments: true
 date: 2017-07-29 18:35:00 -0400
 ---
 
