@@ -2,6 +2,10 @@ I am a graduate student in Computer Science and Cognitive Science at Tufts Unive
 
 ## Latest posts:
 
+{% if site.posts == null %}
+(no posts yet)
+{% else %}
 {% for post in site.posts %}
 - [{{post.title}}]({{post.url}}
 {% endfor %}
+{% endif %}
