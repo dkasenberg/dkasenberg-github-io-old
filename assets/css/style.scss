@@ -1,0 +1,19 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.title-bar-link {
+ font-weight: bold;
+}
+
+.about-img {
+ width:100%;
+ max-width: 300px;
+ float:left;
+ margin-right: 30px;
+}
+
+.bottomspace {
+ margin-bottom: 50px;
+}
