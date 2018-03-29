@@ -7,6 +7,8 @@
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: site.github.repository_name }}" />
     <meta property="og:url"                content="{{ site.url }}{{ page.url }}" />
     <meta property="og:type"               content="article" />
+
+    {% if page.excerpt %}<meta property="og:description"        content="{{ page.excerpt | strip_html }}" />{% endif %}
     <meta property="og:image"              content="{% if page.image %}{{ site.url }}{{ page.image }}{% elsif page.thumbnail %}{{ site.url }}{{ page.thumbnail }}{% endif %}" />
     
 	  <meta name="google-site-verification" content="emNG7di_TtXTPAYdlGHwFbQNwGLuQWFcNdjby77imO4" />
@@ -29,8 +31,8 @@
 {% if page.url %}
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
 {% endif %}
-{% if page.description %}
-  <meta name="twitter:description" content="{{ page.description }}">
+{% if page.excerpt %}
+  <meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
 {% else %}
   <meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
