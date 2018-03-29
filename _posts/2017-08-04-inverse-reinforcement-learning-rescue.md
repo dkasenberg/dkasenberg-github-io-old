@@ -3,6 +3,7 @@ layout: post
 title: 'AI Ethics: Inverse Reinforcement Learning to the Rescue?'
 date: 2017-08-04 13:47:00 -0400
 comments: true
+thumbnail: "assets/img/irl_diagram.png"
 mathjax: true
 ---
 _This post is Part 2 of a three-part series of posts on AI ethics, beginning with my [previous post]({% post_url 2017-07-29-ai-ethics-asimov %}) on Asimov's "Three Laws of Robotics" and culminating in a post describing a recent paper I wrote about interpretable apprenticeship learning._

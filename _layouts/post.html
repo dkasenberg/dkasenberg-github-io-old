@@ -6,6 +6,10 @@ layout: default
   {{ page.title }}
 </h1>
 <p>(Published {{ page.date | date_to_long_string }})</p>
+{% if page.image %}
+<img src={{ page.image }} class="featured-image" />
+{% endif %}
+
 {{ content }}
 
 {% if page.comments %}

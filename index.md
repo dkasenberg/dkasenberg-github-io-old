@@ -6,8 +6,23 @@ I am a graduate student in Computer Science and Cognitive Science at Tufts Unive
 {% if array_size contains '-' %}
 (no posts yet)
 {% else %}
+
+
+
+<table>
 {% for post in site.posts %}
-- **[{{ post.title }}]({{ post.url }})** ({{ post.date | date_to_string }})
-  {{ post.excerpt }}
+<tr>
+<td>{% if post.thumbnail %}
+<a href="{{ post.url }}">
+<img src="{{ post.thumbnail }}" class="thumbnail" /></a>
+{% endif %}
+</td>
+<td>
+<span class="post-title-link">
+<a href="{{ post.url }}">{{ post.title }}</a>
+</span>{{ post.excerpt }}
+  </td>
+</tr>
 {% endfor %}
+</table>
 {% endif %}

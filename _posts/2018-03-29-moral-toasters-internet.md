@@ -2,6 +2,8 @@
 layout: post
 title: 'Moral Toasters and an Internet of Ethical Things'
 bibtex: true
+image: "/assets/img/holy-toaster.png"
+thumbnail: "/assets/img/holy-toaster.png"
 comments: true
 ---
 
