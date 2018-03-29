@@ -5,7 +5,7 @@ bibtex: true
 comments: true
 ---
 
-_After thinking about a [new paper](https://link.springer.com/article/10.1007/s11948-018-0030-8) arguing that the development of morally competent artificial agents isn't justified, I started thinking about ethical reasoning capabilities for various physical objects, including the mighty toaster._
+_After reading a [new paper](https://link.springer.com/article/10.1007/s11948-018-0030-8) arguing that the development of morally competent artificial agents isn't justified, I started thinking about ethical reasoning capabilities for various physical objects, including the mighty toaster._
 
 I recently read an interesting article, titled ["Critiquing the Reasons for Making Artificial Moral Agents"](https://link.springer.com/article/10.1007/s11948-018-0030-8), by Aimee van Wynsberghe and Scott Robbins, in which they argue that the reasons used by people like me (people who propose explicitly designing robots/artificially intelligent agents to behave ethically) to justify our endeavor fall apart on further analysis.  It's an interesting argument, and you should read it. I disagree with a lot of their points; maybe some other time I'll try to write a thorough rebuttal.  Anyway, that's not what I'm hoping to accomplish in this post.
 
