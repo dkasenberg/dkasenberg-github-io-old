@@ -12,6 +12,13 @@ layout: default
 
 {{ content }}
 
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<!-- Place this tag where you want the share button to render. -->
+<div class="g-plus" data-action="share"></div>
+
+<div class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="button_count" style="position: relative; top: -5px; left: 0;"></div>
+
 {% if page.comments %}
 <div class="disqus">
   {% include disqus.html %}
@@ -19,3 +26,5 @@ layout: default
 {% else %}
 <p>(Comments are disabled on this post)</p>
 {% endif %}
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>

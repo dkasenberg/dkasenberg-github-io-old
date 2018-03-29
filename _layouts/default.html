@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: site.github.repository_name }}</title>
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: site.github.repository_name }}" />
+    <meta property="og:url"                content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:image"              content="{% if page.image %}{{ site.url }}{{ page.image }}{% elsif page.thumbnail %}{{ site.url }}{{ page.thumbnail }}{% endif %}" />
+    
 	  <meta name="google-site-verification" content="emNG7di_TtXTPAYdlGHwFbQNwGLuQWFcNdjby77imO4" />
 	  <meta name="google-site-verification" content="emNG7di_TtXTPAYdlGHwFbQNwGLuQWFcNdjby77imO4" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -12,11 +16,45 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+<!-- Twitter cards metadatas -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dkasenberg">
+<meta name="twitter:creator" content="@dkasenberg">
+{% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
+{% else %}
+  <meta name="twitter:title" content="{{ site.title }}">
+{% endif %}
+{% if page.url %}
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+{% endif %}
+{% if page.description %}
+  <meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+{% if page.image %}
+  <meta name="twitter:image:src" content="{{ site.url }}{{ page.image }}">
+  {% elif page.thumbnail %}
+  <meta name="twitter:image:src" content="{{ site.url }}{{ page.thumbnail }}">
+{% endif %}
+
+
+    
     {% if page.bibtex %}
     {% include bibtex.html %}
     {% endif %}
   </head>
   <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
     {% if page.bibtex %}
     {% for name in page.bibtex_names %}
     <bibtex src="/assets/bib/{{ name }}.bib" name="{{ name }}"></bibtex>
