@@ -20,7 +20,7 @@ I am a graduate student in Computer Science and Cognitive Science at Tufts Unive
 <td>
 <span class="post-title-link">
 <a href="{{ post.url }}">{{ post.title }}</a>
-</span>{{ post.excerpt }}
+</span>({{ post.date | date_to_string }}){{ post.excerpt }}
   </td>
 </tr>
 {% endfor %}
